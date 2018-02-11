@@ -1,0 +1,283 @@
+body {
+    background-color: #ededed;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #777777;
+    margin: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    position: relative;
+    width: 1100px;
+    margin: auto;
+}
+
+.header {
+    background-color: #ffffff;
+    position: relative;
+    width: 100%;
+    height: 56px;
+}
+
+
+.name {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    background-color: #4aaaa5;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+#myname {
+    color: #ffffff;
+}
+
+.nav {
+    position: absolute;
+    bottom: 0;
+    right:70px;
+    padding-bottom: 10px;
+}
+
+.navlink {
+    color: #777777;
+    padding: 10px;
+}
+
+.content {
+    width: 960px;
+    height: auto;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+p {
+   font-size: 16px;
+   padding: 5px;
+   line-height: 1.5; 
+}
+
+.section {
+    float: left;
+    display: inline;
+    width: 630px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.profile {
+    float: left;
+    display: inline;
+    max-width: 35%;
+    height: auto;
+    margin-right: 20px;
+}
+
+h1 {
+    color: #4aaaa5;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+hr {
+    background-color: #ededed;
+    border: solid;
+    border-color: #ededed;
+    margin-bottom: 20px;
+}
+
+.standardinput{
+    width: 100%;
+    margin-bottom: 20px;
+    max length: 100;
+    color: #9e9c9c;
+    padding: 5px;
+}
+
+.standardinput:focus{
+    color: #777777;
+}
+
+.messageinput {
+    width: 100%;
+    height: 200px;
+    max length: 500;
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+
+.submitbutton {
+    background-color: #4aaaa5;
+    height: 40px;
+    border-radius: 4px;
+    border-color: #777777;
+    font-size: 18px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.submitbutton:hover {
+    background-color: #3c8884;
+}
+
+.aside {
+    float: right;
+    display: inline;
+    width: 240px;
+    background-color: #ffffff;
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.SocialMedia {
+   max-width: 50px;
+   height: auto;
+   padding: 10px;
+   margin-left: 5px;
+}
+
+.portfolioimage {
+    display: inline;
+    float: left;
+    padding: 50px;
+}
+
+.portfolioname {
+    background-color: #4aaaa5;
+    width: 200px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    margin-top: -50px;
+}
+
+.footer {
+    background-color:#666666;
+    color: #ededed;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    border-top-color: #4aaaa5;
+    border-top-style: solid;
+    border-top-width: 5px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 980px) {
+    .header {
+        max-width: 980px;
+        margin: auto;
+    }
+
+    .section {
+        width: 500px;
+        margin-left: 75px;
+    }
+
+    .profile {
+        display: block;
+        max-width: 100%;
+        max-height: 25%;
+    }
+
+    .portfolioimage {
+        display: block;
+        margin: auto;
+    }    
+
+    .aside {
+        margin-right: 30px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        max-width: 768px;
+        margin: auto;
+    }
+
+    .content {
+        max-width: 628px;
+        margin: auto;
+    }
+    
+    .section {
+        width: 600px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile {
+        diplay: inline;
+        max-width: 35%;
+    }
+
+    .portfolioimage {
+        display: inline;
+        float: left;
+        padding: 50px;
+    }
+
+    .aside {
+        display: block;
+        float: left;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        max-width: 768px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header {
+        max-width: 640px;
+        margin: auto;
+        position: static;
+    }
+
+    .content {
+        max-width: 500px;
+    }
+
+    .section {
+        width: 500px;
+    }
+
+    .profile {
+        display: block;
+        max-width: 100%;
+        max-height: 25%;
+    }
+
+    .portfolioimage {
+        display: block;
+    }
+
+    .aside {
+        display: block;
+        float: left;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        max-width: 640px;
+        margin: auto;
+    }
+}
